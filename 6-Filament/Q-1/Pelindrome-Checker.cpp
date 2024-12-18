@@ -1,34 +1,37 @@
 #include<iostream>
 #include<string.h>
-
 using namespace std;
 
 int main(){
 
-string name = "madam";
-
-string name2;
+string name ;
+cout<<"Enter any string:";
+cin>>name;
 
 string name2 = name;
 
+
+
 int len = name.length()-1;
+
 
 int count = 0;
 
 for(int i=len; i>=0; i--){
     if(name[i] != name[count]){
-        cout << "not palendrome";
+        cout << "The given string is not Palindrome.";
         break;
     }
     else{
-      count++;                   
+      count++;  
     }
   
 }
 
 if(count == len+1){
-     cout << "is palendrome";
+     cout << "The given string is a Palindrome.";
 }
+
 
     return 0;
 }

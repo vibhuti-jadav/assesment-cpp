@@ -4,8 +4,6 @@ using namespace std;
 
 int main() {
     int row, col;
-
-   
     cout << "Enter the array's row size: ";
     cin >> row;
     cout << "Enter the array's column size: ";
